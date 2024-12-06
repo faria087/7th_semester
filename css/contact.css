@@ -1,0 +1,99 @@
+.contact-section-main {
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.contact-section {
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    width: 80%;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+.contact-details-item {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 10px 0;
+    gap:25px;
+}
+.contact-details-item i {
+    font-size: 28px;
+    color: orange;
+    font-weight: 7000;
+}
+.contact-details-item span {
+    font-size: 24px;
+    color: #ffffff;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.contact-form form .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+    gap:20px;
+}
+.contact-form form .form-group label {
+    font-size: 24px;
+    color: orange;
+    font-weight: 7000;
+    text-align: left;
+    width: 30%;
+}
+.contact-form form .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 20px;
+}
+.contact-form form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 20px;
+}
+.contact-form form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}

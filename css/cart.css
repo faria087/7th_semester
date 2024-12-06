@@ -1,0 +1,317 @@
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    padding: 40px;
+
+}
+.cart-table{
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    background: #0B1218;
+}
+.cart-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: orange;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid orange;
+    margin-bottom: 1rem;
+    padding: 30px;
+}
+.cart-header h2{
+    font-size: 28px;
+
+}
+.cart-table-item{
+    height: 100%;
+}
+.cart-table-item table{
+    width: 100%;
+    border-collapse: collapse;
+    height: 100%;
+}
+.cart-table-item table thead{
+    background: #0B1218;
+    color: orange;
+}
+.cart-table-item table thead th{
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #605f5f;
+}
+.cart-table-item table tbody tr{
+    border-bottom: 1px solid #605f5f;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+}
+.cart-table-item table tbody tr td{
+    padding: 1rem;
+    border-bottom: 2px solid #605f5f;
+}
+.cart-table-item table tbody tr td img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.cart-table-item table tbody tr td input{
+    width: 100px;
+    padding: 10px;
+    border: none;
+    background-color: orange;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+}
+.cart-table-item table tbody tr td a{
+    padding: 10px;
+    border: none;
+    background-color: orange;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cart-table-item table tbody tr td button i{
+    color: #000000;
+}
+.cart-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+.cart-product img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.cart-product .cart-product-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cart-product .cart-product-info h3{
+    font-size: 24px;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.cart-product .cart-product-info p{
+    font-size: 18px;
+    color: orange;
+    margin-bottom: 10px;
+}
+.cart-footer{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 30px;
+}
+.cart-footer a{
+    padding: 10px;
+    border: none;
+    background-color: orange;
+    color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.cart-summary{
+    width: 30%;
+    background: #323639;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.cart-summary .cart-summary-header{
+    display: flex;
+    padding: 30px;
+    width: 100%;
+    border-bottom: 1px solid orange;
+    
+}
+.cart-summary .cart-summary-header h2{
+    font-size: 28px;
+    color: orange;
+    text-align: left;
+}
+.cart-summary-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+.cart-summary-item p{
+    font-size: 24px;
+    color: #efefef;
+    text-transform: uppercase;
+}
+.cart-summary-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+
+}
+.cart-summary-items p{
+    font-size: 24px;
+    color: #efefef;
+    text-transform: uppercase;
+}
+.cart-summary-items select{
+    padding: 10px;
+    border: none;
+    background-color: orange;
+    color: #000000;
+    font-size: 20px;
+}
+.cart-summary-items select option{
+    padding: 10px;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 20px;
+}
+.cart-summary-footer{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+}
+.cart-summary-footer a{
+    padding: 10px;
+    border: none;
+    background-color: orange;
+    color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.cart-summary-footer a:hover{
+    background-color: #ffffff;
+    color: rgb(10, 10, 10);
+}
+.cart-summary-footer button{
+    padding: 10px;
+    border: none;
+    background-color: orange;
+    color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.payment-term{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+.payment-term a img{ 
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.blink {
+    animation: blink-animation 0.5s steps(2, start) 3;
+}
+
+@keyframes blink-animation {
+    50% {
+        opacity: 0;
+    }
+}
+
+form{
+    width: 100%;
+}
+
+
+
+.order{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    padding: 40px;
+}
+.user-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+    background: #0B1218;
+    padding: 30px;
+
+}
+ .section-title{
+    color: orange;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+ .details p{
+    color: white;
+}
+.order-details{
+    width: 100%;
+    background: #0B1218;
+    padding: 30px;
+}
+.order-details table{
+    width: 100%;
+    border-collapse: collapse;
+    height: 100%;
+    border: 1px solid orange;
+}
+.order-details table thead{
+    background: #0B1218;
+    color: orange;
+    height: 18px;
+}
+.order-details table thead th{
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid orange;
+}
+.order-details table tbody tr{
+   
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+}
+.order-details table tbody tr td{
+    padding: 1rem;
+    border-bottom: 2px solid orange;
+}

@@ -1,0 +1,126 @@
+.about{
+    min-height: 100vh;
+}
+.about-bread{
+    background: url(../images/img3.jpg) center/cover no-repeat;
+    height: 150px;
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-bread i{
+    color: #000000;
+    font-size: 1.5rem;
+}
+.about-bread__link{
+    color: #000000;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 7000;
+}
+.about-bread__link:nth-child(3){
+    color: orangered;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+    margin-top: 60px;
+}
+.about-content .about-title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: orange;
+}
+.about-content .about-title span{
+    color: #ffffff;
+}
+.about-content .about-description{
+    font-size: 1.2rem;
+    text-align: center;
+    color: #ffffff;
+}
+.about-team{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+.about-team .about-team-title{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: rgb(254, 149, 2);
+}
+.about-team-members{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.about-team-member{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0B1218;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+.about-team-member::before{
+    content: '';
+    position: absolute;
+   
+    width: 100px;
+    height: 140%;
+    background: linear-gradient(#ff0048, #ff8400);
+    animation: rotate 4s linear infinite;
+}
+.about-team-member::after{
+    content: '';
+    position: absolute;
+    background: #0B1218;
+    inset: 5px;
+    border-radius: 20px;
+}   
+.about-team-member-image{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    z-index: 1000;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/* .about-team-member-image img{
+   
+    transition: 0.3s;
+} */
+
+.about-team-member-name{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: orange;
+    margin-bottom: 10px;
+    z-index: 1000;
+}
+.about-team-member-role{
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    z-index: 1000;
+}

@@ -1,0 +1,101 @@
+.login{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background: #0B1218;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+.login-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.login-form form .form-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+    gap:20px;
+}
+.login-form form .form-group label{
+    font-size: 24px;
+    color: orange;
+    font-weight: 7000;
+    text-align: left;
+    width: 30%;
+}
+.login-form form .form-group input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 20px;
+}
+.login-form form button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.from-group-item{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    gap:20px;
+    
+}
+.from-group-item p{
+    font-size: 18px;
+    color: orange;
+    font-weight: 7000;
+    text-align: left;
+    width: 30%;
+}
+.login-form form p{
+    font-size: 18px;
+    color: orange;
+    font-weight: 7000;
+    text-align: left;
+    padding: 10px;
+}
+.login-form form .form-group select{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 20px;
+}
+.login-form form .form-group select option{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 20px;
+}
