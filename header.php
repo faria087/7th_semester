@@ -13,10 +13,11 @@
                 <li><a href="faq.php">Faq'S</a></li>
                 <li><a href="logout.php">Logout</a></li>
             </ul>
-            <div class="search">
-                <span class="las la-search"></span>
-                <input type="search" placeholder="Enter Keyword">
-            </div>
+            <form action="search.php" class="search">
+                
+                <button style="background: none;border:none;color:white;padding:10px;font-size:20px;" type="submit" name="submit"><i class="las la-search"></i></button>
+                <input type="text" placeholder="Search" name="search">
+            </form>
             <ul>
                 <li class="user-nav-item">
                     <a href="login.php">

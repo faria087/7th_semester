@@ -1,6 +1,6 @@
 <?php
     
-    $conn = mysqli_connect("localhost", "root", "inzamam660027", "bookstore");
+    $conn = mysqli_connect("localhost", "root", "", "bookstore");
     if (!$conn) {
         die("Connection Failed");
     }

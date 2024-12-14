@@ -18,7 +18,7 @@
                 <span> +088 01717777777</span>
             </a>
             <a href="" class="las la-envelope">
-                <span>raj@gmail.com</span>
+                <span>faria@gmail.com</span>
             </a>
 
         </div>

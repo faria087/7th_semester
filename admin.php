@@ -97,7 +97,7 @@ if (!isset($_SESSION['user_id'])) {
 
                 <div class="card-ad ">
                     <div class="card-icon likes">
-                        <span class="las la-book"></span>
+                        <span class="las la-book" style="color: green;"></span>
                     </div>
                     <?php
                     include 'config.php';
@@ -147,6 +147,100 @@ if (!isset($_SESSION['user_id'])) {
                         <div>
                             <?php
                             $sql = "SELECT * FROM categories LIMIT 3";
+                            $result = mysqli_query($conn, $sql);
+                            if (mysqli_num_rows($result) > 0) {
+                                while ($row = mysqli_fetch_assoc($result)) {
+                            ?>
+                                    <img src="<?= $row['image'] ?>" alt="">
+                            <?php }
+                            } ?>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-ad">
+                    <div class="card-icon comment">
+                        <span class="las la-shopping-cart" style="color: purple;"></span>
+                    </div>
+                    <?php
+                    include 'config.php';
+                    $sql = "SELECT * FROM checkout";
+                    $result = mysqli_query($conn, $sql);
+                    $totalOrders = mysqli_num_rows($result);
+                    ?>
+                    <div class="card-info">
+                        <h2>
+                            <?php echo $totalOrders; ?>
+                        </h2>
+                        <small>Total Orders</small>
+                    </div>
+                    <div class="card-images">
+                        <div>
+                            <?php
+                            $sql = "SELECT * FROM categories LIMIT 3";
+                            $result = mysqli_query($conn, $sql);
+                            if (mysqli_num_rows($result) > 0) {
+                                while ($row = mysqli_fetch_assoc($result)) {
+                            ?>
+                                    <img src="<?= $row['image'] ?>" alt="">
+                            <?php }
+                            } ?>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-ad">
+                    <div class="card-icon comment">
+                        <span class="las la-hand-holding-heart" style="color:#F50263;"></span>
+                    </div>
+                    <?php
+                    include 'config.php';
+                    $sql = "SELECT * FROM give";
+                    $result = mysqli_query($conn, $sql);
+                    $totalCategories = mysqli_num_rows($result);
+                    ?>
+                    <div class="card-info">
+                        <h2>
+                            <?php echo $totalCategories; ?>
+                        </h2>
+                        <small>Total Brrows</small>
+                    </div>
+                    <div class="card-images">
+                        <div>
+                            <?php
+                            $sql = "SELECT * FROM give LIMIT 3";
+                            $result = mysqli_query($conn, $sql);
+                            if (mysqli_num_rows($result) > 0) {
+                                while ($row = mysqli_fetch_assoc($result)) {
+                            ?>
+                                    <img src="<?= $row['image'] ?>" alt="">
+                            <?php }
+                            } ?>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-ad">
+                    <div class="card-icon comment">
+                        <span class="las la-heart" style="color: red;"></span>
+                    </div>
+                    <?php
+                    include 'config.php';
+                    $sql = "SELECT * FROM wishlist";
+                    $result = mysqli_query($conn, $sql);
+                    $totalWishes = mysqli_num_rows($result);
+                    ?>
+                    <div class="card-info">
+                        <h2>
+                            <?php echo $totalWishes; ?>
+                        </h2>
+                        <small>Total Wishes</small>
+                    </div>
+                    <div class="card-images">
+                        <div>
+                            <?php
+                            $sql = "SELECT * FROM wishlist LIMIT 3";
                             $result = mysqli_query($conn, $sql);
                             if (mysqli_num_rows($result) > 0) {
                                 while ($row = mysqli_fetch_assoc($result)) {
